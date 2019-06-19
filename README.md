@@ -2,7 +2,9 @@
 
 [![NPM version](https://img.shields.io/npm/v/vue-verification-code.svg)](https://www.npmjs.com/package/vue-verification-code)
 
-> vue verification code component 验证码插件
+> vue verification code component vue验证码插件
+由于实现验证码输入时，ios多个输入框兼容问题颇多，于是发布一款验证码插件，以便大家使用，有number（主要用于验证码类型），password（支付密码一类的输入）
+，插件回调返回输入值（目前是blur和enter键），欢迎提出问题
 
 ## 支持
 
@@ -34,10 +36,10 @@ Vue.use(verificationcode)
 
 # 展示
 
-## 作为number类型使用
+### 作为number类型使用
 ![avatar](/static/number.gif)
 
-## 作为password类型使用
+### 作为password类型使用
 ![avatar](/static/password.gif)
 
 ``` bash
