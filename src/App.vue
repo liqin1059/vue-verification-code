@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="code-components">
-      <verification-code :styles="styles" :type="'password'" :maxlength="6" @output="output"></verification-code>
+      <vue-verification-code :styles="styles" :type="'password'" :maxlength="6" @output="output"></vue-verification-code>
     </div>
   </div>
 </template>

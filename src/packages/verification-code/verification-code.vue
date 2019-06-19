@@ -27,7 +27,7 @@
 </template>
 <script>
 export default {
-  name: 'verification-code',
+  name: 'vue-verification-code',
   components: {},
   props: {
     type: {

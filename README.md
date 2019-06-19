@@ -12,6 +12,18 @@
 | maxlength | Number | 验证码长度 | 否 | 6 |
 | styles | Object | 输入框样式（驼峰命名） | 否 | {} |
 
+# 使用
+```
+npm install vue-uploaders --save
+```
+
+在main.js中引入
+
+```js
+import verificationcode from './index.js'
+Vue.use(verificationcode)
+```
+
 # 展示
 
 ## 作为number类型使用
