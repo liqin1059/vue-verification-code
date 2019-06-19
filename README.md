@@ -16,7 +16,7 @@
 
 ### 安装
 ```
-npm install vue-uploaders --save
+npm install vue-verification-code --save
 ```
 
 ### 在main.js中引入
