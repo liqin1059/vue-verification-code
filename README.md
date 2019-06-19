@@ -15,10 +15,10 @@
 # 展示
 
 ## 作为number类型使用
-![avatar](/static/number.png)
+![avatar](/static/number.gif)
 
 ## 作为password类型使用
-![avatar](/static/password.png)
+![avatar](/static/password.gif)
 
 ``` bash
 # install dependencies
