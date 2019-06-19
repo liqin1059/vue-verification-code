@@ -7,8 +7,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'verification-code.js',
-    library: 'verification-code',
+    filename: 'vue-verification-code.js',
+    library: 'vue-verification-code',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
