@@ -1,7 +1,7 @@
 {
   "name": "vue-verification-code",
   "description": "vue verification code component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "liqin1059",
   "license": "MIT",
   "private": false,
@@ -17,6 +17,22 @@
     "type": "git",
     "url": "https://github.com/liqin1059/vue-verification-code.git"
   },
+  "keywords": [
+    "vue-verification-code",
+    "vue verification code",
+    "verification-code",
+    "verification code",
+    "vue-verification",
+    "vueverification",
+    "vue",
+    "code",
+    "vue-code",
+    "vue code",
+    "vue-password",
+    "vue password",
+    "验证码",
+    "密码"
+  ],
   "dependencies": {
     "vue": "^2.5.11"
   },
