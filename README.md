@@ -13,15 +13,22 @@
 | styles | Object | 输入框样式（驼峰命名） | 否 | {} |
 
 # 使用
+
+### 安装
 ```
 npm install vue-uploaders --save
 ```
 
-在main.js中引入
+### 在main.js中引入
 
 ```js
 import verificationcode from './index.js'
 Vue.use(verificationcode)
+```
+### 在组件中使用
+
+```html
+<vue-verification-code :styles="styles" :type="'password'" :maxlength="6" @output="output"></vue-verification-code>
 ```
 
 # 展示
