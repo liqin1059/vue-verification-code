@@ -95,7 +95,7 @@ export default {
     opacity: 0;
   }
   & > .code-all {
-    padding: px2rem(120) px2rem(60) 0 px2rem(60);
+    padding: 60px 30px 0 30px;
     display: flex;
     align-content: space-between;
     & > .code-item {
