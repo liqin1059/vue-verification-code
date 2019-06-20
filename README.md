@@ -13,7 +13,7 @@
 | type | String | 输入类型 | 否 | 'number' |
 | maxlength | Number | 验证码长度 | 否 | 6 |
 | styles | Object | 输入框样式（驼峰命名） | 否 | {} |
-| output | event | 输入框回调 | - | 参数（输入框的值） |
+| output | event | 输入框回调 | - | 参数（对象）<br>{data: string（输入框的值）,isfinished: boolean（是否输入完成）} |
 
 # 使用
 

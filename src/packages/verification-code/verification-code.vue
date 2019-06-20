@@ -77,7 +77,10 @@ export default {
       this.$refs.codeinput.focus();
     },
     inputBlur() {
-      this.$emit('output', this.$data.inputdata);
+      this.$emit('output', {
+        data: this.$data.inputdata,
+        isfinished: !this.$data.codeData.includes('')
+      });
     }
   }
 };

@@ -2,6 +2,7 @@
   <div id="app">
     <div class="code-components">
       <vue-verification-code :styles="styles" :type="'password'" :maxlength="6" @output="output"></vue-verification-code>
+      <button :disabled="!emitData.isfinished">确定</button>
     </div>
   </div>
 </template>
@@ -15,11 +16,16 @@ export default {
         'border': '1px solid #dcdcdc',
         'padding': '10px',
         'margin': '15px',
+      },
+      emitData: {
+        data: '',
+        isfinished: false
       }
     }
   },
   methods: {
     output(data) {
+      this.$data.emitData = data;
       console.log(data);
     }
   }
