@@ -25,7 +25,7 @@ npm install vue-verification-code --save
 ### 在main.js中引入
 
 ```js
-import verificationcode from './index.js'
+import verificationcode from 'vue-verification-code'
 Vue.use(verificationcode)
 ```
 ### 在组件中使用
