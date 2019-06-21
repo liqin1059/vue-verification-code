@@ -42,6 +42,10 @@ Vue.use(verificationcode)
 ### 作为password类型使用
 ![avatar](/static/password.gif)
 
+# 更新
+
++ v1.0.5新增输入激活样式
+
 ``` bash
 # install dependencies
 npm install

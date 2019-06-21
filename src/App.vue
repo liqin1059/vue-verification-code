@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="code-components">
-      <vue-verification-code :styles="styles" :type="'password'" :maxlength="6" @output="output"></vue-verification-code>
+      <vue-verification-code :styles="styles" :type="'number'" :maxlength="6" @output="output"></vue-verification-code>
       <button :disabled="!emitData.isfinished">确定</button>
     </div>
   </div>

@@ -12,13 +12,14 @@
       <div class="code-item"
            v-for="(item, index) in codeData"
            :key="index"
-           :class="{'code-password': inputdata.length - 1 >= index }"
+           :class="{'code-active': index === 0 || inputdata.length - 1 >= index, 'code-password': inputdata.length - 1 >= index }"
            :style="[styles]"
            contenteditable="true"></div>
     </div>
     <div class="code-all" @click="focus" v-else>
       <div class="code-item"
            v-for="(item, index) in codeData"
+           :class="{'code-active': index === 0 || inputdata.length - 1 >= index }"
            :key="index"
            :style="[styles]"
            contenteditable="true">{{ item }}</div>
@@ -86,6 +87,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+// 激活样式
+.code-active{
+  border: 1px solid #343646!important;
+}
+// .code-box > .code-all > .code-item.code-active{
+//   border: 1px solid #333333;
+// }
 .code-box{
   width: 100%;
   position: relative;
