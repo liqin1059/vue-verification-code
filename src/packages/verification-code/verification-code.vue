@@ -60,9 +60,21 @@ export default {
       if (/[^\d]/g.test(newVal)) {
         this.inputdata = this.inputdata.replace(/[^\d]/g, '');
       } else if (newVal.length < oldVal.length) {
-        this.$data.codeData[oldVal.length - 1] = '';
-      } else {
+        // 清空输入值
+        if (newVal === '') {
+          this.$data.codeData = ['', '', '', '', '', ''];
+        } else {
+          // 依次删除按键
+          this.$data.codeData[oldVal.length - 1] = '';
+        }
+      } else if (newVal.length - 1 === oldVal.length) {
+        // 依次输入
         this.$data.codeData[newVal.length - 1] = newVal[newVal.length - 1];
+      } else {
+        // 验证码自动填充
+        newVal.split('').map((item, index) => {
+          this.$data.codeData[index] = item;
+        });
       }
     },
   },

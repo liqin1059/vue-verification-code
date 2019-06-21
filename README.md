@@ -44,7 +44,8 @@ Vue.use(verificationcode)
 
 # 更新
 
-+ v1.0.5新增输入激活样式
++ @1.0.6 新增输入激活样式
++ @1.0.7 输入框值同步新增判断
 
 ``` bash
 # install dependencies
